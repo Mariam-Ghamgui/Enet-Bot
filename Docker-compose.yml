@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  rasa-server:
+    build: ./
+    ports:
+      - "5005:5005"
+    volumes:
+      - ${PWD}/models:/app/models 
+    command: ["run", "-m", "/app/models", "--enable-api", "--cors", "*", "--debug", "--endpoints", "endpoints.yml", "--log-file", "out.log"]
+
+  rasa-actions:
+    build: ./actions
+    ports:
+      - "5055:5055"
+
+  frontend:
+    container_name: "rasa_frontend"
+    build: ./rasa_front_end
+    ports:
+      - "8080:80"

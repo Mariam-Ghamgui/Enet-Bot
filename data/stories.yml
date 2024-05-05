@@ -1,0 +1,111 @@
+version: "3.1"
+
+stories:
+
+- story: ask about events
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_events
+  - action: action_query_database
+
+- story: ask to get help
+  steps:
+  - intent: help
+  - action: utter_help
+  
+
+- story: ask about video
+  steps:
+  - intent: ask_video
+  - action: action_send_university_video
+
+
+- story: ask about pdf
+  steps:
+  - intent: ask_pdf
+  - action: action_send_pdf_attachment
+
+
+- story: Ask about professors chart
+  steps:
+  - intent: ask_professors_chart
+  - action: action_send_professors_chart
+
+
+
+- story: Ask about infrastructure chart
+  steps:
+  - intent: ask_infrastructure_chart
+  - action: action_send_infrastructure_chart
+
+
+- story: Ask about orientation plan image
+  steps:
+  - intent: ask_orientation_plan_image
+  - action: action_send_orientation_plan_image
+
+
+- story: ask about departments
+  steps:
+    - intent: ask_departments
+    - action: action_send_departments_collapsible
+
+- story: ask about training
+  steps:
+    - intent: ask_training
+    - action: action_send_training_carousel
+
+
+- story: ask about contact info
+  steps:
+  - intent: ask_contact_info
+  - action: action_send_contact_quick_replies
+  - intent: contact_info
+  - action: action_handle_contact_choice
+
+- story: ask about location
+  steps:
+    - intent: ask_location
+    - action: action_send_location
+
+- story: choose language
+  steps:
+    - intent: choose_language
+    - action: action_handle_language_choice
+
+
+- story: user asks about ENET'Com
+  steps:
+  - intent: what_is_enetcom
+  - action: utter_what_is_enetcom
+
+
+
+- story: user asks about books count
+  steps:
+  - intent: books_count
+  - action: utter_books_count
+
+- story: user asks about reasons to study
+  steps:
+  - intent: reasons_to_study
+  - action: utter_reasons_to_study
+
+- story: user asks about extranet access
+  steps:
+  - intent: extranet_access
+  - action: utter_extranet_access
+
+- story: User says goodbye
+  steps:
+  - intent: goodbye
+  - action: action_send_role_options
+  - intent: inform
+  - action: action_store_user_role
+
+- story: Handle fallback
+  steps:
+    - intent: fallback
+    - action: action_default_fallback
+

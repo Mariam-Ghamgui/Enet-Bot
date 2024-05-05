@@ -1,0 +1,15 @@
+version: "3.1"
+
+rules:
+
+
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Handle fallback
+  steps:
+    - intent: fallback
+    - action: action_default_fallback

@@ -1,0 +1,16 @@
+# Enet'Bot
+
+## Overview
+Enet'Bot is a cloud-native chatbot developed for integration into the ENETCOM website. It leverages Kubernetes and open-source tools for deployment and utilizes natural language processing (NLP) to provide conversational interactions with users.
+
+## Features
+- **Cloud-Native Architecture**: Built using cloud-native principles for scalability and resilience.
+- **Chatbot Integration**: Seamlessly integrated into the ENETCOM website to enhance user experience.
+- **Kubernetes Deployment**: Utilizes Kubernetes for container orchestration and management.
+- **Open-Source Tools**: Incorporates open-source tools for NLP, chatbot logic, and backend services.
+- **Conversational Interface**: Provides a natural and conversational interface for users to interact with.
+
+## Installation and Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MariamGhamgui/EnetBot.git

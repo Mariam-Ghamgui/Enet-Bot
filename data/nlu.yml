@@ -1,0 +1,239 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: ask_events
+  examples: |
+    - Any events coming up?
+    - Can you tell me about upcoming events?
+    - What events are happening soon?
+
+
+- intent: ask_video
+  examples: |
+    - Can you show me some videos?
+    - Give me videos to watch.
+    - Show me university-related content.
+    - I'm interested in watching something, can you suggest?
+
+ 
+- intent: ask_pdf
+  examples: |
+    - Can you send me the internal regulations?
+    - I need a copy of the internal regulations.
+    - Could you provide me with the student guide document?
+    - Is there a PDF for the internal policies?
+    - Where can I find the regulations document?
+
+
+- intent: ask_professors_chart
+  examples: |
+    - How many professors are there in ENET'Com?
+    - Can you provide information about the professors at ENET'Com?
+    - What types of professors are there in ENET'Com?
+    - Tell me about the teaching staff at ENET'Com.
+    - Do you have data on the faculty members of ENET'Com?
+
+
+- intent: ask_infrastructure_chart
+  examples: |
+    - What is the infrastructure like at ENET'Com?
+    - Can you provide details about the facilities at ENET'Com?
+    - Tell me about the classrooms and facilities at ENET'Com.
+    - How are the labs and classrooms at ENET'Com?
+    - What are the resources available at ENET'Com?
+
+
+- intent: ask_orientation_plan_image
+  examples: |
+    - Show me the orientation plan image
+    - Can you send me the orientation plan?
+    - I want to see the Plan d'orientation
+    - Display the orientation plan of ENET'Com
+    - Please show the orientation plan image
+
+- intent: ask_departments
+  examples: |
+    - Tell me about the departments at ENET’Com.
+    - What are the available departments in ENET’Com?
+    - I want to know more about the engineering departments.
+
+- intent: ask_training
+  examples: |
+    - What types of training programs are available at ENET’Com?
+    - Can you provide information about the training programs at ENET’Com?
+    - Tell me about the courses offered at ENET’Com.
+
+
+- intent: ask_contact_info
+  examples: |
+    - What is the contact information for ENET'Com University?
+    - Can you provide me with ENET'Com's contact details?
+    - How can I contact ENET'Com?
+    - Tell me about ENET'Com's phone number, fax, and email.
+    - I need to reach out to ENET'Com. How?
+
+
+- intent: contact_info
+  examples: |
+    - Phone
+    - Email
+    - Fax
+
+
+- intent: ask_location
+  examples: |
+    - Can you share your location?
+    - Please allow access to your location
+    - I need to know your current location
+    - Where are you located?
+    - What's your location?
+    - Share your current coordinates
+    - Location please
+    - Tell me where you are
+
+- intent: choose_language
+  examples: |
+    - French
+    - English
+
+
+
+- intent: help
+  examples: |
+    - Help
+    - Can i get help?
+    - What can i ask you?
+    - How can you help me?
+
+- intent: what_is_enetcom
+  examples: |
+    - What is ENET'Com?
+    - Tell me about ENET'Com.
+    - What does ENET'Com stand for?
+
+- intent: books_count
+  examples: |
+    - How many books does the ENET'Com library have?
+    - Tell me about the library collection at ENET'Com.
+    - What is the book count at ENET'Com?
+
+- intent: reasons_to_study
+  examples: |
+    - Why should I study at ENET'Com?
+    - What are the benefits of studying at ENET'Com?
+    - Tell me about the advantages of enrolling in ENET'Com.
+
+
+- intent: extranet_access
+  examples: |
+    - How can I access the extranet?
+    - Tell me about accessing the extranet.
+    - How to log in to the extranet?
+
+- intent: inform
+  examples: |
+    - Professor
+    - Administrator
+    - Visitor
+    - Student
+
+- intent: fallback
+  examples: |
+    - I don't understand
+    - Can you repeat that?
+    - Sorry, I'm not sure
+    - What do you mean?
+
+
+
